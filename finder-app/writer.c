@@ -27,7 +27,7 @@ int main(int argc, char **argv){
     
     ssize_t nr;
 
-    syslog(LOG_DEBUG,"writing to file: %s\n", argv[1]);
+    syslog(LOG_DEBUG,"writing to string %s to file: %s\n",argv[2],argv[1]);
 
     nr = write(fd, argv[2], strlen(argv[2]));
 
